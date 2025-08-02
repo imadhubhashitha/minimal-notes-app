@@ -107,7 +107,9 @@ body, #root {
   background: #f3f4f6;
 }
 
-/* DARK MODE */@media (prefers-color-scheme: dark) {
+/* DARK MODE */
+
+@media (prefers-color-scheme: dark) {
   body, #root {
     background: #18181b;
   }
@@ -117,7 +119,6 @@ body, #root {
   }
   .note {
     background: #232336;
-    /* REMOVE color: #fafafa; */
     box-shadow: 0 2px 8px 0 rgba(0,0,0,0.25);
   }
   .note-input textarea {
@@ -128,6 +129,11 @@ body, #root {
   .note-input button {
     background: #6366f1;
     color: #fff;
+  }
+  .note-input button:disabled {
+    background: #444;
+    color: #bbb;
+    cursor: not-allowed;
   }
   .delete-btn {
     color: #bbb;
